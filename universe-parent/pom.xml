@@ -5,7 +5,7 @@
     <parent>
         <groupId>io.github.ooknight</groupId>
         <artifactId>universe-bom</artifactId>
-        <version>1.0.3</version>
+        <version>1.1.0</version>
     </parent>
 
     <artifactId>universe-parent</artifactId>
@@ -61,12 +61,12 @@
             <dependency>
                 <groupId>io.ebean</groupId>
                 <artifactId>ebean</artifactId>
-                <version>12.10.0</version>
+                <version>12.11.0</version>
             </dependency>
             <dependency>
                 <groupId>io.ebean</groupId>
                 <artifactId>ebean-querybean</artifactId>
-                <version>12.10.0</version>
+                <version>12.11.0</version>
             </dependency>
             <dependency>
                 <groupId>io.ebean</groupId>
@@ -76,7 +76,7 @@
             <dependency>
                 <groupId>io.ebean</groupId>
                 <artifactId>querybean-generator</artifactId>
-                <version>12.10.0</version>
+                <version>12.11.0</version>
             </dependency>
             <!-- ========= ========= ========= ========= ========= ========= ========= ========= ========= ignite -->
             <dependency>
@@ -90,11 +90,11 @@
                 <version>2.10.0</version>
             </dependency>
             <!-- ========= ========= ========= ========= ========= ========= ========= ========= ========= others -->
-            <dependency>
-                <groupId>com.alibaba</groupId>
-                <artifactId>fastjson</artifactId>
-                <version>1.2.76</version>
-            </dependency>
+            <!--<dependency>-->
+            <!--    <groupId>com.alibaba</groupId>-->
+            <!--    <artifactId>fastjson</artifactId>-->
+            <!--    <version>1.2.78</version>-->
+            <!--</dependency>-->
             <dependency>
                 <groupId>org.jasypt</groupId>
                 <artifactId>jasypt</artifactId>
@@ -103,7 +103,7 @@
             <dependency>
                 <groupId>cn.hutool</groupId>
                 <artifactId>hutool-all</artifactId>
-                <version>5.7.6</version>
+                <version>5.7.8</version>
             </dependency>
             <dependency>
                 <groupId>org.redisson</groupId>
@@ -113,7 +113,7 @@
             <dependency>
                 <groupId>com.github.shalousun</groupId>
                 <artifactId>smart-doc</artifactId>
-                <version>2.2.3</version>
+                <version>2.2.4</version>
             </dependency>
             <dependency>
                 <groupId>commons-io</groupId>
@@ -124,6 +124,134 @@
                 <groupId>org.apache.commons</groupId>
                 <artifactId>commons-text</artifactId>
                 <version>1.9</version>
+            </dependency>
+            <!-- ========= ========= ========= ========= ========= ========= ========= ========= ========= universe ui -->
+            <dependency>
+                <groupId>io.github.ooknight</groupId>
+                <artifactId>axios</artifactId>
+                <version>0.21.1.110</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.ooknight</groupId>
+                <artifactId>bootstrap</artifactId>
+                <version>5.1.0.110</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.ooknight</groupId>
+                <artifactId>bootstrap3</artifactId>
+                <version>3.4.1.110</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.ooknight</groupId>
+                <artifactId>bootstrap4</artifactId>
+                <version>4.6.0.110</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.ooknight</groupId>
+                <artifactId>bootstrap-icons</artifactId>
+                <version>1.5.0.110</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.ooknight</groupId>
+                <artifactId>jquery</artifactId>
+                <version>3.6.0.110</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.ooknight</groupId>
+                <artifactId>jquery2</artifactId>
+                <version>2.2.4.110</version>
+            </dependency>
+            <!-- ========= ========= ========= ========= ========= ========= ========= ========= ========= universe support plugins -->
+            <dependency>
+                <groupId>io.github.ooknight</groupId>
+                <artifactId>universe-prime</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.ooknight</groupId>
+                <artifactId>universe-support-ebean</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.ooknight</groupId>
+                <artifactId>universe-support-ignite</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.ooknight</groupId>
+                <artifactId>universe-support-sensitive</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.ooknight</groupId>
+                <artifactId>universe-support-stateful</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.ooknight</groupId>
+                <artifactId>universe-support-utils</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <!-- ========= ========= ========= ========= ========= ========= ========= ========= ========= universe platform -->
+            <dependency>
+                <groupId>io.github.ooknight</groupId>
+                <artifactId>universe-booster-secure-api</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.ooknight</groupId>
+                <artifactId>universe-core-domain</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.ooknight</groupId>
+                <artifactId>universe-core-kernel</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.ooknight</groupId>
+                <artifactId>universe-core-web</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.ooknight</groupId>
+                <artifactId>universe-core-web-security</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.ooknight</groupId>
+                <artifactId>universe-framework</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.ooknight</groupId>
+                <artifactId>universe-prototype-authority</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.ooknight</groupId>
+                <artifactId>universe-prototype-event</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.ooknight</groupId>
+                <artifactId>universe-starter-ebean</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.ooknight</groupId>
+                <artifactId>universe-starter-lock</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.ooknight</groupId>
+                <artifactId>universe-starter-trace</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>io.github.ooknight</groupId>
+                <artifactId>universe-testing</artifactId>
+                <version>${project.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -169,6 +297,7 @@
                     <version>3.3.0</version>
                     <configuration>
                         <additionalJOption>-J-Dfile.encoding=utf-8</additionalJOption>
+                        <detectOfflineLinks>false</detectOfflineLinks>
                         <quiet>true</quiet>
                     </configuration>
                     <executions>
@@ -207,15 +336,23 @@
                     </executions>
                 </plugin>
                 <plugin>
-                    <groupId>io.repaint.maven</groupId>
-                    <artifactId>tiles-maven-plugin</artifactId>
-                    <version>2.23</version>
-                    <extensions>true</extensions>
-                    <configuration>
-                        <tiles>
-                            <tile>io.ebean.tile:enhancement:12.10.0</tile>
-                        </tiles>
-                    </configuration>
+                    <groupId>io.ebean</groupId>
+                    <artifactId>ebean-maven-plugin</artifactId>
+                    <version>12.11.1</version>
+                    <executions>
+                        <execution>
+                            <id>main</id>
+                            <goals>
+                                <goal>enhance</goal>
+                            </goals>
+                        </execution>
+                        <execution>
+                            <id>test</id>
+                            <goals>
+                                <goal>testEnhance</goal>
+                            </goals>
+                        </execution>
+                    </executions>
                 </plugin>
                 <plugin>
                     <groupId>org.springframework.boot</groupId>

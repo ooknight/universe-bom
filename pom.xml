@@ -4,10 +4,10 @@
 
     <groupId>io.github.ooknight</groupId>
     <artifactId>universe-bom</artifactId>
-    <version>1.0.3</version>
+    <version>1.1.0</version>
     <packaging>pom</packaging>
 
-    <name>universe bom</name>
+    <name>universe-bom</name>
     <description>universe bom</description>
     <url>https://github.com/ooknight/universe-bom</url>
 
@@ -34,7 +34,6 @@
         <project.build.sourceEncoding>utf-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
-        <!--<maven.compiler.release>11</maven.compiler.release>-->
         <version.org.springframework.boot>2.5.3</version.org.springframework.boot>
     </properties>
 
