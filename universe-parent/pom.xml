@@ -14,254 +14,11 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-dependencies</artifactId>
-                <version>${version.org.springframework.boot}</version>
+                <groupId>io.github.ooknight</groupId>
+                <artifactId>universe-dependencies</artifactId>
+                <version>${project.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
-            </dependency>
-            <dependency>
-                <groupId>org.jodd</groupId>
-                <artifactId>jodd-bom</artifactId>
-                <version>5.1.6</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-            <!-- ========= ========= ========= ========= ========= ========= ========= ========= ========= keep -->
-            <dependency>
-                <groupId>com.google.guava</groupId>
-                <artifactId>guava</artifactId>
-                <version>31.0.1-jre</version>
-            </dependency>
-            <!-- ========= ========= ========= ========= ========= ========= ========= ========= ========= override -->
-            <dependency>
-                <groupId>org.yaml</groupId>
-                <artifactId>snakeyaml</artifactId>
-                <version>1.29</version>
-            </dependency>
-            <!-- ========= ========= ========= ========= ========= ========= ========= ========= ========= spring boot 3rd -->
-            <dependency>
-                <groupId>de.codecentric</groupId>
-                <artifactId>spring-boot-admin-starter-server</artifactId>
-                <version>2.5.4</version>
-            </dependency>
-            <dependency>
-                <groupId>de.codecentric</groupId>
-                <artifactId>spring-boot-admin-starter-client</artifactId>
-                <version>2.5.4</version>
-            </dependency>
-            <!-- ========= ========= ========= ========= ========= ========= ========= ========= ========= mapstruct -->
-            <dependency>
-                <groupId>org.mapstruct</groupId>
-                <artifactId>mapstruct</artifactId>
-                <version>1.4.2.Final</version>
-            </dependency>
-            <dependency>
-                <groupId>org.mapstruct</groupId>
-                <artifactId>mapstruct-processor</artifactId>
-                <version>1.4.2.Final</version>
-            </dependency>
-            <!-- ========= ========= ========= ========= ========= ========= ========= ========= ========= ebean orm -->
-            <dependency>
-                <groupId>io.ebean</groupId>
-                <artifactId>ebean</artifactId>
-                <version>12.13.0</version>
-            </dependency>
-            <dependency>
-                <groupId>io.ebean</groupId>
-                <artifactId>ebean-querybean</artifactId>
-                <version>12.13.0</version>
-            </dependency>
-            <dependency>
-                <groupId>io.ebean</groupId>
-                <artifactId>ebean-spring-txn</artifactId>
-                <version>12.12.0</version>
-            </dependency>
-            <dependency>
-                <groupId>io.ebean</groupId>
-                <artifactId>querybean-generator</artifactId>
-                <version>12.13.0</version>
-            </dependency>
-            <!-- ========= ========= ========= ========= ========= ========= ========= ========= ========= ignite -->
-            <dependency>
-                <groupId>org.apache.ignite</groupId>
-                <artifactId>ignite-core</artifactId>
-                <version>2.11.0</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.ignite</groupId>
-                <artifactId>ignite-slf4j</artifactId>
-                <version>2.11.0</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.ignite</groupId>
-                <artifactId>ignite-spring</artifactId>
-                <version>2.11.0</version>
-            </dependency>
-            <!-- ========= ========= ========= ========= ========= ========= ========= ========= ========= others -->
-            <dependency>
-                <groupId>org.jasypt</groupId>
-                <artifactId>jasypt</artifactId>
-                <version>1.9.3</version>
-            </dependency>
-            <dependency>
-                <groupId>cn.hutool</groupId>
-                <artifactId>hutool-all</artifactId>
-                <version>5.7.16</version>
-            </dependency>
-            <dependency>
-                <groupId>org.redisson</groupId>
-                <artifactId>redisson</artifactId>
-                <version>3.16.4</version>
-            </dependency>
-            <dependency>
-                <groupId>com.github.shalousun</groupId>
-                <artifactId>smart-doc</artifactId>
-                <version>2.3.1</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>org.yaml</groupId>
-                        <artifactId>snakeyaml</artifactId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
-            <dependency>
-                <groupId>commons-io</groupId>
-                <artifactId>commons-io</artifactId>
-                <version>2.11.0</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.commons</groupId>
-                <artifactId>commons-text</artifactId>
-                <version>1.9</version>
-            </dependency>
-            <!-- ========= ========= ========= ========= ========= ========= ========= ========= ========= universe ui -->
-            <dependency>
-                <groupId>io.github.ooknight.ui</groupId>
-                <artifactId>axios</artifactId>
-                <version>0.21.1.111</version>
-            </dependency>
-            <dependency>
-                <groupId>io.github.ooknight.ui</groupId>
-                <artifactId>bootstrap</artifactId>
-                <version>5.1.1.111</version>
-            </dependency>
-            <dependency>
-                <groupId>io.github.ooknight.ui</groupId>
-                <artifactId>bootstrap4</artifactId>
-                <version>4.6.0.111</version>
-            </dependency>
-            <dependency>
-                <groupId>io.github.ooknight.ui</groupId>
-                <artifactId>bootstrap3</artifactId>
-                <version>3.4.1.111</version>
-            </dependency>
-            <dependency>
-                <groupId>io.github.ooknight.ui</groupId>
-                <artifactId>bootstrap-icons</artifactId>
-                <version>1.5.0.111</version>
-            </dependency>
-            <dependency>
-                <groupId>io.github.ooknight.ui</groupId>
-                <artifactId>jquery</artifactId>
-                <version>3.6.0.111</version>
-            </dependency>
-            <dependency>
-                <groupId>io.github.ooknight.ui</groupId>
-                <artifactId>jquery2</artifactId>
-                <version>2.2.4.111</version>
-            </dependency>
-            <!-- ========= ========= ========= ========= ========= ========= ========= ========= ========= universe support plugins -->
-            <dependency>
-                <groupId>io.github.ooknight</groupId>
-                <artifactId>universe-prime</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>io.github.ooknight</groupId>
-                <artifactId>universe-support-ebean</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>io.github.ooknight</groupId>
-                <artifactId>universe-support-ignite</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>io.github.ooknight</groupId>
-                <artifactId>universe-support-sensitive</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>io.github.ooknight</groupId>
-                <artifactId>universe-support-stateful</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>io.github.ooknight</groupId>
-                <artifactId>universe-support-utils</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-            <!-- ========= ========= ========= ========= ========= ========= ========= ========= ========= universe platform -->
-            <dependency>
-                <groupId>io.github.ooknight</groupId>
-                <artifactId>universe-booster-secure-api</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>io.github.ooknight</groupId>
-                <artifactId>universe-core-domain</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>io.github.ooknight</groupId>
-                <artifactId>universe-core-kernel</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>io.github.ooknight</groupId>
-                <artifactId>universe-core-web</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>io.github.ooknight</groupId>
-                <artifactId>universe-core-web-security</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>io.github.ooknight</groupId>
-                <artifactId>universe-framework</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>io.github.ooknight</groupId>
-                <artifactId>universe-prototype-authority</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>io.github.ooknight</groupId>
-                <artifactId>universe-prototype-event</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>io.github.ooknight</groupId>
-                <artifactId>universe-starter-ebean</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>io.github.ooknight</groupId>
-                <artifactId>universe-starter-lock</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>io.github.ooknight</groupId>
-                <artifactId>universe-starter-trace</artifactId>
-                <version>${project.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>io.github.ooknight</groupId>
-                <artifactId>universe-testing</artifactId>
-                <version>${project.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
@@ -272,7 +29,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-compiler-plugin</artifactId>
-                    <version>3.8.1</version>
+                    <version>3.10.1</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -282,7 +39,7 @@
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
                     <artifactId>maven-jar-plugin</artifactId>
-                    <version>3.2.0</version>
+                    <version>3.2.2</version>
                 </plugin>
                 <plugin>
                     <groupId>org.apache.maven.plugins</groupId>
@@ -348,7 +105,7 @@
                 <plugin>
                     <groupId>io.ebean</groupId>
                     <artifactId>ebean-maven-plugin</artifactId>
-                    <version>12.13.0</version>
+                    <version>12.16.1</version>
                     <executions>
                         <execution>
                             <id>main</id>
